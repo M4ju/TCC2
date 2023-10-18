@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognize cursos</title>
+    <!--Estilo do site-->
+    <link rel="stylesheet" href="css/pginicial.css">
+
+    <!--Responsividade do site-->
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Slides-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--Início do Menu-->
+    <header id="inicio">
+        <img src="imagens/imagem 1.jpg" class="background-image" alt="imagem de fundo">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                    <li><a href="login-estudante.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Menu Mobile-->
+     <div id="btn-menu" class="btn-abrir-menu">
+        <i class="bi bi-list"></i>
+     </div>
+
+        <div id="menu-mobile" class="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x"></i>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                    <li><a href="login.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Fim do Menu Mobile-->
+        <div id="overlay-menu" class="overlay-menu"></div>
+        <script src="js/menu.js"></script>
+    </header>
+
+    <div class="logo-container">
+        <img src="imagens/COG_BRANCO.png" alt="Imagenm de fundo do menu">
+    </div>
+    <p class="slogan">Invista no seu futuro agora!</p>
+    <!--Fim do Menu-->
+
+    <!--Inicio dos recursos que temos-->
+    <div class="imgs">
+        <div class="image-box">
+            <img src="imagens/1img.png" alt="">
+            <h3 class="titulo">Cursos Online</h3>
+            <p class="desc">Cursos em diversas áreas, com aulas 100% online e totalmente gratuito.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="imagens/3img.png" alt="">
+            <h3 class="titulo">Ótimos Professores</h3>
+            <p class="desc">Professores especialistas, com aulas de alta qualidade que te ajudam a atingir melhores
+                resultados.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="imagens/4img.png" alt="">
+            <h3 class="titulo">Certificados</h3>
+            <p class="desc">Cursos online gratuitos com certificado. Matricule-se e após a conclusão garanta o seu. </p>
+        </div>
+
+        <div class="image-box">
+            <img src="imagens/2img.png" alt="">
+            <h3 class="titulo">Sobre Nós</h3>
+            <p class="desc">Empresa tecnologica; suporte ao público e inserção ao mercado de trabalho.</p>
+        </div>
+    </div>
+    <!--Fim dos recursos que temos-->
+
+    <!--Inicio dos slides-->
+
+    <div class="swiper slider">
+        <div class="swiper-wrapper slides">
+            <!--Imagens do slide-->
+            <div class="swiper-slide slide">
+                <img src="imagens/culinaria.jpg" alt="Curso de culinária">
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="imagens/adm.jpg" alt="Curso de administração">
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="imagens/mkt.jpg" alt="Curso de TI">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="slider.js"></script>
+    <!--Fim das imagens-->
+
+    <!--Fim do slide-->
+
+    <!--Formas de contato-->
+    <saction class="contatos" id="contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-secao">
+
+            <div class="tell-ctt">
+                <i class="bi bi-telephone"></i>(12) 99224-5204
+
+            </div>
+
+            <div class="email-ctt">
+                <i class="bi bi-envelope"></i>cognizecursos@gmail.com
+            </div>
+
+            <div class="insta-ctt">
+                <a href="https://www.instagram.com/cognizecursos/" target="_blank">
+                    <i class="bi bi-instagram"></i>@cognizecursos</a>
+            </div>
+
+        </div>
+    </saction>
+
+
+    <footer>
+        <h4> &copy; Desenvolvido por Equipe Cognize Cursos</h4>
+    </footer>
+    <!--Fim das formas de contato-->
+
+</body>
+
+</html>

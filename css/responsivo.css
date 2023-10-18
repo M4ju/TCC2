@@ -1,0 +1,221 @@
+/* Media queries */
+/* TELAS MÉDIAS */
+@media (max-width:991px){
+    /* MENU */
+    .background-image {
+        width: 100%;
+        height: 70vh;
+        border-radius: 3px;
+    /* FIM DO MENU */
+
+    
+    }
+}
+@media (max-width:768px) {
+
+    /* MENU */
+    .background-image {
+        width: 100%;
+        height: 50vh;
+        border-radius: 3px;
+    }
+
+    nav{
+      padding: 10px 0px 10px 37px;
+    }
+
+    .menu ul li {
+      display: inline-block;
+      font-size: 110%;
+      margin-left: 42px;
+      padding: 10px 0;
+    }
+
+    .logo-container img{
+      top:24%;
+    }
+
+    .slogan {
+
+      top: 28%;  /*espaço entre o slogan e a logo */
+      margin-left: 28%;
+      position: absolute;
+      font-size: 2.1rem;  /* tamanho da fonte */
+    }
+    /* FIM DO MENU */
+
+
+    /* INFORMAÇÕES */
+    .imgs{
+      margin-top:-26rem;
+    }
+    /* FIM DAS INFO */
+
+
+    /* SLIDES */
+    .slider {
+        width: 40rem;
+        height: 20rem;
+        border-radius: 3px;
+    }
+
+    .slide {
+        width: 25%;
+    }
+
+    .slide img {
+        width: 40rem;
+        height: 20rem;
+        border-radius: 3px;
+    }
+   /* FIM DOS SLIDES */
+
+
+    /* RODAPÉ */
+    .contatos {
+      width: 100%;
+      margin-top: 15%;
+      border-radius: 3px;
+  }
+
+  .contatos h3 {
+      font-size: 2rem;
+      /* margin-bottom: 3rem; */
+  }
+
+  .contatos-secao {
+      width: 100%;
+      height: 5rem;
+      text-align: center;
+      font-size: 22px;
+  }
+
+  .tell-ctt{
+      margin-top: 5%;
+  }
+
+  .email-ctt {
+      margin-top: 5%;
+  }
+
+  .insta-ctt {
+      margin-top: 5%;
+  }
+
+  footer {
+      width: 100%;
+      height: 3rem;
+      font-size: 1.2rem;
+      border-radius: 3px;
+  }
+    /* FIM DO RODAPÉ */
+}
+
+/* CELULARES */
+@media (max-width:480px) {
+
+    .background-image {
+        width: 100%;
+        height: 35vh;
+        border-radius: 3px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .slogan {
+
+        top: 4rem;
+        /*espaço entre o slogan e a logo */
+        margin-left: 14%;
+        position: absolute;
+        font-size: 20px;
+
+        /* tamanho da fonte */
+    }
+
+    .menu {
+        display: none;
+    }
+   /* Fim do Cabeçalho*/
+
+    /*Inicio dos recursos que temos*/
+    .imgs {
+        margin-top: -24rem;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .image-box {
+        width: 150px;
+    }
+
+    .titulo {
+        margin-top: 0.5rem;
+        font-size: 20px;
+    }
+
+    .desc {
+        margin-top: -1rem;
+        font-size: 15px;
+    }
+
+    /*Fim dos recursos que temo */
+
+    /*Slides*/
+    .slider {
+        width: 18rem;
+        height: 9rem;
+        border-radius: 3px;
+    }
+
+    .slide {
+        width: 25%;
+    }
+
+    .slide img {
+        width: 18rem;
+        height: 9rem;
+        border-radius: 3px;
+    }
+
+    /* Fim dos Slides*/
+
+    /* rodapé */
+    .contatos {
+        width: 100%;
+        margin-top: 15%;
+        border-radius: 3px;
+    }
+
+    .contatos h3 {
+        font-size: 2rem;
+        /* margin-bottom: 3rem; */
+    }
+
+    .contatos-secao {
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        font-size: 18px;
+        flex-direction: column;
+    }
+
+    .email-ctt {
+        margin-top: 5%;
+    }
+
+    .insta-ctt {
+        margin-top: 5%;
+    }
+
+    footer {
+        width: 100%;
+        height: 3rem;
+        font-size: 0.9rem;
+        border-radius: 3px;
+    }
+
+    /* fim do rodapé */
+}

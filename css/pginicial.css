@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #AFCFFF;
+}
+
+/*Iniciodo menu*/
+header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+header .menu li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 300ms ease-in;
+}
+
+header .menu li a:hover {
+  border-bottom: 4px solid #80c5e0;
+  color: #80c5e0;
+}
+
+
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+nav {
+  position: absolute;
+  /* aqui tava position: fixed; por isso o menu ficava fixa no site todo, quando vc for fazer aquele botão coloca position:fixed */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-direction: row;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 137px;
+  padding-top: 12px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* MENU MOBILE */
+.btn-abrir-menu i{
+  color:#000000;
+  font-size: 3rem;
+  position: absolute;
+  right: 0;
+  top:10px;
+}
+
+.menu-mobile{
+  background:#85a6ec;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+}
+
+.menu-mobile .btn-fechar{
+  font-size: 3rem;
+}
+
+.menu-mobile nav ul{
+  
+  text-align: left;
+  list-style-type: none;
+}
+
+.menu-mobile nav ul li a{
+  text-decoration: none;
+  color:#000000;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 100px 20%;
+}
+
+.overlay-menu{
+  background-color: #000000a7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+/* FIM MENU MOBILE */
+
+
+.logo-container img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 230px;
+  width: 300px;
+  background-image: url(imagens/COG_BRANCO.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  /* espaço entre o slogan e a logo */
+  margin-left: 12rem;
+  font-weight: bold;
+  /*grossura da letrta*/
+  font-size: 38px;
+  /* tamanho da fonte */
+  letter-spacing: 2.5px;
+  /*espaço entre as letras*/
+  font-family: Big Shoulders Display;
+  color: #ffffff;
+}
+/*Fim do menu*/
+
+
+/*Inicio dos recursos que temos*/
+.imgs {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-box {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  top: 100%;
+}
+
+.image-text {
+  margin-top: 10px;
+}
+
+.titulo {
+  font-family: Anton;
+  letter-spacing: 2px;
+  /*espaço entre as letras*/
+}
+
+.desc {
+  font-family: Inter;
+  font-size: 20px;
+}
+/*Fim dos recursos que temos*/
+
+/*slides*/
+
+.slider {
+  margin: 0 ;
+  width: 1300px;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  
+  width: 1300px;
+  height: 600px;
+  display: flex;
+  position: relative;
+}
+
+.slide {
+  width:25%;
+}
+
+.slide img{
+  width:1300px; 
+  height: 600px ;
+}
+
+/*contato*/
+
+.insta-ctt a {
+  color: white;
+  text-decoration: none
+}
+
+.insta-ctt a:hover {
+  color: #80c5e0;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.contatos {
+  /* width: 100%; */
+  margin-top: 5%;
+  background-color: #0b3979;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.contatos h3 {
+  font-size: 3rem;
+  margin-bottom: 5wrem;
+}
+
+.contatos-secao {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  /* background-color: #494e50; */
+}
+
+.contatos-secao .tell-ctt {
+  color: white;
+}
+
+.contatos-secao i {
+  margin-right: 5px;
+}
+
+.contatos-secao div {
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover {
+  color: #80c5e0;
+}
+
+footer {
+  height: 25px;
+  background-color: rgb(5, 1, 59);
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

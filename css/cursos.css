@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'odin';
+  src: url('../font/Odin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('../font/Montserrat-Regular.otf') format('opentype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+html {
+  /* width: 100vmax; */
+  height: 100vh;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header .menu li a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 300ms ease-in;
+  display: flex;
+  text-decoration: none;
+  font-family: 'odin';
+}
+
+header .menu li a:hover {
+  border-bottom: 3px solid #203e80;
+  color: #203e80;
+}
+
+nav {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 137px;
+  padding-top: 12px;
+  justify-content: space-around;
+}
+
+.menu img {
+  width: 60px;
+  height: 60px;
+  top: 14px;
+}
+
+/* MENU MOBILE */
+.btn-abrir-menu i{
+  color:#000000;
+  font-size: 5rem;
+  position: absolute;
+  right: 0;
+  top:10px;
+}
+
+.menu-mobile{
+  background:#85a6ec;
+  height: 20vh;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+  width: 65%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+}
+
+.menu-mobile .btn-fechar{
+  font-size: 5rem;
+}
+
+.menu-mobile nav ul{
+
+  text-align: left;
+}
+
+.menu-mobile nav ul li a{
+  color:#000000;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 20px 10%;
+}
+
+.overlay-menu{
+  background-color: #000000a7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+/* FIM MENU MOBILE */
+
+
+/*curso*/
+.curso {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding-top: 3.8rem;
+  border-top: #000000 solid 2px;
+}
+
+.curso .tt {
+  font-size: 4.5rem;
+  font-family: 'odin';
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.itens-curso {
+  width: 95%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15px, 250px));
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.itens-curso .info {
+  background-color: #AFCFFF;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 57px;
+  border-bottom-right-radius: 57px;
+}
+
+.itens-curso .info h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: 'odin';
+  text-align: center;
+}
+
+.itens-curso .info h4 {
+  font-size: 1.4rem;
+  font-family: 'mont';
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 150px 150px;
+}
+
+.itens-curso div {
+  background-color: #ffffff;
+  border: #000000 2px solid;
+  border-radius: 19%;
+  justify-content: center;
+  align-items: center;
+}
+
+.itens-curso img {
+  width: 93%;
+  height: 200px;
+  border-radius: 50px;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  padding: 10px;
+}
+
+.itens-curso .info .pedir {
+  width: 180px;
+  margin-top: 0.5rem;
+  background-color: #203e80;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 200ms ease-in;
+  padding: 15px 4px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'odin';
+  letter-spacing: 1px;
+}
+
+.itens-curso .info .pedir:hover {
+  background-color: #5177ca;
+  color: white;
+}
+
+/*contato*/
+
+.insta-ctt a {
+  color: white;
+  text-decoration: none
+}
+
+.insta-ctt a:hover {
+  color: #80c5e0;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.contatos {
+  /* width: 100%; */
+  margin-top: 5%;
+  background-color: #0b3979;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.contatos h3 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contatos-secao {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  /* background-color: #494e50; */
+}
+
+.contatos-secao .tell-ctt {
+  color: white;
+}
+
+.contatos-secao i {
+  margin-right: 5px;
+}
+
+.contatos-secao div {
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover {
+  color: #80c5e0;
+}
+
+footer {
+  height: 25px;
+  background-color: rgb(5, 1, 59);
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
